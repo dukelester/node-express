@@ -1,0 +1,28 @@
+<%- include('./partials/head.ejs') %>
+
+<form action="/blogs" method="post">
+    <div row-cols-md-auto>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Title</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="title" >
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Category</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="category" >
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Time</label>
+    <input type="date" class="form-control" id="exampleFormControlInput1" name="time">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Owner</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="owner" >
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">description</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
+  </div>
+</div>
+</form>
+
+<button type="submit" class="btn-primary"> Submit </button>

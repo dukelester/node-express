@@ -1,0 +1,12 @@
+{
+  "name": "4.xapiexpress",
+  "version": "1.0.0",
+  "description": "learn more about express js",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dukelester",
+  "license": "ISC"
+}
