@@ -6,6 +6,7 @@ const app = express ();
 
 const port = 3000;
 
+app.use(express.json());
 //connect to the database
 export let db;
 connectToDatabase((err) =>{

@@ -4,6 +4,7 @@ import { MongoClient } from 'mongodb';
 
 let db_connection;
 const mongo_connect_string  = 'mongodb://localhost:27017/Hotels';
+// const mongo_connect_string = "mongodb+srv://dukelester:Kali@lester2030@cluster0.guygb.mongodb.net/?retryWrites=true&w=majority"
 
 export const connectToDatabase = async (call_back)=>{
     try{
