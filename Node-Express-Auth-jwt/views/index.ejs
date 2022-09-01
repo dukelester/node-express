@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= 'title' %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+  </head>
+  
+  <body>
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+          
+          <div class="col-4 text-center">
+              <a class="blog-header-logo text-dark" href="#">Welcome to Auth with JWT</a>
+
+          </div>
+          
+          <div class="col-4 d-flex justify-content-end align-items-center">
+              
+              <% if (user) { %>
+                <h4 style="text-align: left; color:blue; word-wrap: break-word">Logged in as <%= user.email  %> </h4>
+                <br><br>
+                <a class="btn btn-sm btn-outline-secondary" href="/logout">Logout</a>
+              <% } else { %>
+               
+              <a class="btn btn-sm btn-outline-secondary" href="/signup">Sign up</a>
+              <a class="btn btn-sm btn-outline-secondary" href="/login">Sign In</a>
+              <% } %>
+          </div>
+      </div>
+  </header>
+
+    <h1><%= 'Express JWT Auth' %></h1>
+    <p>Welcome to JWT Authentication </p>
+  </body>
+</html>
